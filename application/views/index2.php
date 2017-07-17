@@ -338,7 +338,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?php echo current_url() ?>"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
+            <li><a href="<?php echo site_url('welcome/index') ?>"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
             <li class="active"><a href="<?php echo site_url('welcome/index2') ?>"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
           </ul>
         </li>

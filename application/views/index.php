@@ -344,7 +344,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="<?php echo site_url('welcome/allahuakbar') ?>"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
+            <li class="active"><a href="<?php echo site_url('Welcome/index') ?>"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
             <li><a href="<?php echo site_url('welcome/index2') ?>"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
           </ul>
         </li>
