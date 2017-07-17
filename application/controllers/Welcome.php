@@ -28,4 +28,24 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('index2');
 	}
+
+	public function topnav()
+	{
+		$this->load->view('pages/layout/top-nav');
+	}
+
+	public function boxed()
+	{
+		$this->load->view('pages/layout/boxed');
+	}
+
+	public function fixed()
+	{
+		$this->load->view('pages/layout/fixed');
+	}
+
+	public function colside()
+	{
+		$this->load->view('pages/layout/collapsed-sidebar');
+	}
 }
