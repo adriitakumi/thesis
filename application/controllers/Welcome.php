@@ -166,32 +166,37 @@ class Welcome extends CI_Controller {
 
 	public function buttons()
 	{
-		$this->load->view('pages/tables/buttons');
+		$this->load->view('pages/UI/buttons');
 	}
 
 	public function uigeneral()
 	{
-		$this->load->view('pages/tables/uigeneral');
+		$this->load->view('pages/UI/general');
 	}
 
 	public function icons()
 	{
-		$this->load->view('pages/tables/icons');
+		$this->load->view('pages/UI/icons');
 	}
 
 	public function modals()
 	{
-		$this->load->view('pages/tables/modals');
+		$this->load->view('pages/UI/modals');
 	}
 
 	public function sliders()
 	{
-		$this->load->view('pages/tables/sliders');
+		$this->load->view('pages/UI/sliders');
 	}
 
 	public function timeline()
 	{
-		$this->load->view('pages/tables/timeline');
+		$this->load->view('pages/UI/timeline');
+	}
+
+	public function calendar()
+	{
+		$this->load->view('pages/calendar');
 	}
 
 }

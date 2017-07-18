@@ -343,14 +343,14 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="layout/top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
-            <li><a href="layout/boxed.html"><i class="fa fa-circle-o"></i> Boxed</a></li>
-            <li><a href="layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
-            <li><a href="layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
+            <li><a href="<?php echo site_url('welcome/topnav'); ?>"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
+            <li><a href="<?php echo site_url('welcome/boxed'); ?>"><i class="fa fa-circle-o"></i> Boxed</a></li>
+            <li><a href="<?php echo site_url('welcome/fixed'); ?>"><i class="fa fa-circle-o"></i> Fixed</a></li>
+            <li><a href="<?php echo site_url('welcome/colside'); ?>"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
           </ul>
         </li>
         <li class="active">
-          <a href="widgets.html">
+          <a href="<?php echo site_url('welcome/widgets'); ?>">
             <i class="fa fa-th"></i> <span>Widgets</span>
             <span class="pull-right-container">
               <small class="label pull-right bg-green">new</small>
@@ -366,8 +366,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="charts/chartjs.html"><i class="fa fa-circle-o"></i> ChartJS</a></li>
-            <li><a href="charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>
+            <li><a href="<?php echo site_url('welcome/chartjs'); ?>"><i class="fa fa-circle-o"></i> ChartJS</a></li>
+            <li><a href="<?php echo site_url('welcome/morris'); ?>"><i class="fa fa-circle-o"></i> Morris</a></li>
             <li><a href="charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>
             <li><a href="charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>
           </ul>

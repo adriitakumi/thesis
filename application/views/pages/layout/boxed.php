@@ -233,10 +233,10 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
-            <li class="active"><a href="boxed.html"><i class="fa fa-circle-o"></i> Boxed</a></li>
-            <li><a href="fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
-            <li><a href="collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
+            <li><a href="<?php echo site_url('welcome/topnav'); ?>"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
+            <li class = "active"><a href="<?php echo site_url('welcome/boxed'); ?>"><i class="fa fa-circle-o"></i> Boxed</a></li>
+            <li><a href="<?php echo site_url('welcome/fixed'); ?>"><i class="fa fa-circle-o"></i> Fixed</a></li>
+            <li><a href="<?php echo site_url('welcome/colside'); ?>"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
           </ul>
         </li>
         <li>

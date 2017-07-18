@@ -395,12 +395,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?php echo base_url(); ?>pages/UI/general.html"><i class="fa fa-circle-o"></i> General</a></li>
-            <li><a href="<?php echo base_url(); ?>pages/UI/icons.html"><i class="fa fa-circle-o"></i> Icons</a></li>
-            <li><a href="<?php echo base_url(); ?>pages/UI/buttons.html"><i class="fa fa-circle-o"></i> Buttons</a></li>
-            <li><a href="<?php echo base_url(); ?>pages/UI/sliders.html"><i class="fa fa-circle-o"></i> Sliders</a></li>
-            <li><a href="<?php echo base_url(); ?>pages/UI/timeline.html"><i class="fa fa-circle-o"></i> Timeline</a></li>
-            <li><a href="<?php echo base_url(); ?>pages/UI/modals.html"><i class="fa fa-circle-o"></i> Modals</a></li>
+            <li><a href="<?php echo site_url('welcome/uigeneral'); ?>"><i class="fa fa-circle-o"></i> General</a></li>
+            <li><a href="<?php echo site_url('welcome/icons'); ?>"><i class="fa fa-circle-o"></i> Icons</a></li>
+            <li><a href="<?php echo site_url('welcome/buttons'); ?>"><i class="fa fa-circle-o"></i> Buttons</a></li>
+            <li><a href="<?php echo site_url('welcome/sliders'); ?>"><i class="fa fa-circle-o"></i> Sliders</a></li>
+            <li><a href="<?php echo site_url('welcome/timeline'); ?>"><i class="fa fa-circle-o"></i> Timeline</a></li>
+            <li><a href="<?php echo site_url('welcome/modals'); ?>"><i class="fa fa-circle-o"></i> Modals</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -411,9 +411,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?php echo base_url(); ?>pages/forms/general.html"><i class="fa fa-circle-o"></i> General Elements</a></li>
-            <li><a href="<?php echo base_url(); ?>pages/forms/advanced.html"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
-            <li><a href="<?php echo base_url(); ?>pages/forms/editors.html"><i class="fa fa-circle-o"></i> Editors</a></li>
+            <li><a href="<?php echo site_url('welcome/general'); ?>"><i class="fa fa-circle-o"></i> General Elements</a></li>
+            <li><a href="<?php echo site_url('welcome/advanced'); ?>"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
+            <li><a href="<?php echo site_url('welcome/editors'); ?>"><i class="fa fa-circle-o"></i> Editors</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -424,12 +424,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?php echo base_url(); ?>pages/tables/simple.html"><i class="fa fa-circle-o"></i> Simple tables</a></li>
-            <li><a href="<?php echo base_url(); ?>pages/tables/data.html"><i class="fa fa-circle-o"></i> Data tables</a></li>
+            <li><a href="<?php echo site_url('welcome/simple'); ?>"><i class="fa fa-circle-o"></i> Simple tables</a></li>
+            <li><a href="<?php echo site_url('welcome/data'); ?>"><i class="fa fa-circle-o"></i> Data tables</a></li>
           </ul>
         </li>
         <li>
-          <a href="<?php echo base_url(); ?>pages/calendar.php">
+          <a href="<?php echo site_url('welcome/calendar'); ?>">
             <i class="fa fa-calendar"></i> <span>Calendar</span>
             <span class="pull-right-container">
               <small class="label pull-right bg-red">3</small>
@@ -438,7 +438,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           </a>
         </li>
         <li>
-          <a href="<?php echo base_url(); ?>pages/mailbox/mailbox.html">
+          <a href="<?php echo site_url('welcome/mailbox'); ?>">
             <i class="fa fa-envelope"></i> <span>Mailbox</span>
             <span class="pull-right-container">
               <small class="label pull-right bg-yellow">12</small>
@@ -455,15 +455,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?php echo base_url(); ?>pages/examples/invoice.html"><i class="fa fa-circle-o"></i> Invoice</a></li>
-            <li><a href="<?php echo base_url(); ?>pages/examples/profile.html"><i class="fa fa-circle-o"></i> Profile</a></li>
-            <li><a href="<?php echo base_url(); ?>pages/examples/login.html"><i class="fa fa-circle-o"></i> Login</a></li>
-            <li><a href="<?php echo base_url(); ?>pages/examples/register.html"><i class="fa fa-circle-o"></i> Register</a></li>
-            <li><a href="<?php echo base_url(); ?>pages/examples/lockscreen.html"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
-            <li><a href="<?php echo base_url(); ?>pages/examples/404.html"><i class="fa fa-circle-o"></i> 404 Error</a></li>
-            <li><a href="<?php echo base_url(); ?>pages/examples/500.html"><i class="fa fa-circle-o"></i> 500 Error</a></li>
-            <li><a href="<?php echo base_url(); ?>pages/examples/blank.html"><i class="fa fa-circle-o"></i> Blank Page</a></li>
-            <li><a href="<?php echo base_url(); ?>pages/examples/pace.html"><i class="fa fa-circle-o"></i> Pace Page</a></li>
+            <li><a href="<?php echo site_url('welcome/invoice'); ?>"><i class="fa fa-circle-o"></i> Invoice</a></li>
+            <li><a href="<?php echo site_url('welcome/profile'); ?>"><i class="fa fa-circle-o"></i> Profile</a></li>
+            <li><a href="<?php echo site_url('welcome/login'); ?>"><i class="fa fa-circle-o"></i> Login</a></li>
+            <li><a href="<?php echo site_url('welcome/register'); ?>"><i class="fa fa-circle-o"></i> Register</a></li>
+            <li><a href="<?php echo site_url('welcome/lockscreen'); ?>"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
+            <li><a href="<?php echo site_url('welcome/por'); ?>"><i class="fa fa-circle-o"></i> 404 Error</a></li>
+            <li><a href="<?php echo site_url('welcome/payb'); ?>"><i class="fa fa-circle-o"></i> 500 Error</a></li>
+            <li><a href="<?php echo site_url('welcome/blank'); ?>"><i class="fa fa-circle-o"></i> Blank Page</a></li>
+            <li><a href="<?php echo site_url('welcome/pace'); ?>"><i class="fa fa-circle-o"></i> Pace Page</a></li>
           </ul>
         </li>
         <li class="treeview">

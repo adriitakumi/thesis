@@ -3,22 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 2 | UI Sliders</title>
+  <title>AdminLTE 2 | Modals</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
-  <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="<?php echo base_url(); ?>bower_components/bootstrap/dist/css/bootstrap.min.css">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="<?php echo base_url(); ?>bower_components/font-awesome/css/font-awesome.min.css">
   <!-- Ionicons -->
-  <link rel="stylesheet" href="../../bower_components/Ionicons/css/ionicons.min.css">
-  <!-- bootstrap slider -->
-  <link rel="stylesheet" href="../../plugins/bootstrap-slider/slider.css">
+  <link rel="stylesheet" href="<?php echo base_url(); ?>bower_components/Ionicons/css/ionicons.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="../../dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="<?php echo base_url(); ?>dist/css/AdminLTE.min.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href="<?php echo base_url(); ?>dist/css/skins/_all-skins.min.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,17 +24,30 @@
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
-
   <!-- Google Font -->
-  <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <style>
+    .example-modal .modal {
+      position: relative;
+      top: auto;
+      bottom: auto;
+      right: auto;
+      left: auto;
+      display: block;
+      z-index: 1;
+    }
+
+    .example-modal .modal {
+      background: transparent !important;
+    }
+  </style>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
 
   <header class="main-header">
     <!-- Logo -->
-    <a href="../../index2.html" class="logo">
+    <a href="<?php echo site_url('welcome/index2') ?>" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>A</b>LT</span>
       <!-- logo for regular state and mobile devices -->
@@ -68,7 +79,7 @@
                   <li><!-- start message -->
                     <a href="#">
                       <div class="pull-left">
-                        <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                        <img src="<?php echo base_url(); ?>dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
                       </div>
                       <h4>
                         Support Team
@@ -81,7 +92,7 @@
                   <li>
                     <a href="#">
                       <div class="pull-left">
-                        <img src="../../dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
+                        <img src="<?php echo base_url(); ?>dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
                       </div>
                       <h4>
                         AdminLTE Design Team
@@ -93,7 +104,7 @@
                   <li>
                     <a href="#">
                       <div class="pull-left">
-                        <img src="../../dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
+                        <img src="<?php echo base_url(); ?>dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
                       </div>
                       <h4>
                         Developers
@@ -105,7 +116,7 @@
                   <li>
                     <a href="#">
                       <div class="pull-left">
-                        <img src="../../dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
+                        <img src="<?php echo base_url(); ?>dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
                       </div>
                       <h4>
                         Sales Department
@@ -117,7 +128,7 @@
                   <li>
                     <a href="#">
                       <div class="pull-left">
-                        <img src="../../dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
+                        <img src="<?php echo base_url(); ?>dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
                       </div>
                       <h4>
                         Reviewers
@@ -158,6 +169,7 @@
                       <i class="fa fa-users text-red"></i> 5 new members joined
                     </a>
                   </li>
+
                   <li>
                     <a href="#">
                       <i class="fa fa-shopping-cart text-green"></i> 25 sales made
@@ -191,8 +203,7 @@
                         <small class="pull-right">20%</small>
                       </h3>
                       <div class="progress xs">
-                        <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar"
-                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
                           <span class="sr-only">20% Complete</span>
                         </div>
                       </div>
@@ -206,8 +217,7 @@
                         <small class="pull-right">40%</small>
                       </h3>
                       <div class="progress xs">
-                        <div class="progress-bar progress-bar-green" style="width: 40%" role="progressbar"
-                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-green" style="width: 40%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
                           <span class="sr-only">40% Complete</span>
                         </div>
                       </div>
@@ -221,8 +231,7 @@
                         <small class="pull-right">60%</small>
                       </h3>
                       <div class="progress xs">
-                        <div class="progress-bar progress-bar-red" style="width: 60%" role="progressbar"
-                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-red" style="width: 60%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
                           <span class="sr-only">60% Complete</span>
                         </div>
                       </div>
@@ -236,8 +245,7 @@
                         <small class="pull-right">80%</small>
                       </h3>
                       <div class="progress xs">
-                        <div class="progress-bar progress-bar-yellow" style="width: 80%" role="progressbar"
-                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-yellow" style="width: 80%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
                           <span class="sr-only">80% Complete</span>
                         </div>
                       </div>
@@ -254,13 +262,13 @@
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="../../dist/img/user2-160x160.jpg" class="user-image" alt="User Image ">
+              <img src="<?php echo base_url(); ?>dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
               <span class="hidden-xs">Alexander Pierce</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <img src="<?php echo base_url(); ?>dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
                 <p>
                   Alexander Pierce - Web Developer
@@ -293,10 +301,6 @@
               </li>
             </ul>
           </li>
-          <!-- Control Sidebar Toggle Button -->
-          <li>
-            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
-          </li>
         </ul>
       </div>
     </nav>
@@ -308,7 +312,7 @@
       <!-- Sidebar user panel -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+          <img src="<?php echo base_url(); ?>dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
           <p>Alexander Pierce</p>
@@ -319,7 +323,7 @@
       <form action="#" method="get" class="sidebar-form">
         <div class="input-group">
           <input type="text" name="q" class="form-control" placeholder="Search...">
-          <span class="input-group-btn">
+              <span class="input-group-btn">
                 <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
                 </button>
               </span>
@@ -337,8 +341,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="../../index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
-            <li><a href="../../index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+            <li><a href="<?php echo site_url('welcome/index') ?>"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
+            <li><a href="<?php echo site_url('welcome/index2') ?>"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -350,10 +354,10 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="../layout/top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
-            <li><a href="../layout/boxed.html"><i class="fa fa-circle-o"></i> Boxed</a></li>
-            <li><a href="../layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
-            <li><a href="../layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
+            <li><a href="<?php echo site_url('welcome/topnav'); ?>"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
+            <li><a href="<?php echo site_url('welcome/boxed'); ?>"><i class="fa fa-circle-o"></i> Boxed</a></li>
+            <li><a href="<?php echo site_url('welcome/fixed'); ?>"><i class="fa fa-circle-o"></i> Fixed</a></li>
+            <li><a href="<?php echo site_url('welcome/colside'); ?>"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
           </ul>
         </li>
         <li>
@@ -391,9 +395,9 @@
             <li><a href="general.html"><i class="fa fa-circle-o"></i> General</a></li>
             <li><a href="icons.html"><i class="fa fa-circle-o"></i> Icons</a></li>
             <li><a href="buttons.html"><i class="fa fa-circle-o"></i> Buttons</a></li>
-            <li class="active"><a href="sliders.html"><i class="fa fa-circle-o"></i> Sliders</a></li>
+            <li><a href="sliders.html"><i class="fa fa-circle-o"></i> Sliders</a></li>
             <li><a href="timeline.html"><i class="fa fa-circle-o"></i> Timeline</a></li>
-            <li><a href="modals.html"><i class="fa fa-circle-o"></i> Modals</a></li>
+            <li class="active"><a href="modals.html"><i class="fa fa-circle-o"></i> Modals</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -507,88 +511,182 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Sliders
-        <small>range sliders</small>
+        Modals
+        <small>new</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
         <li><a href="#">UI</a></li>
-        <li class="active">Sliders</li>
+        <li class="active">Modals</li>
       </ol>
     </section>
 
     <!-- Main content -->
     <section class="content">
+      <div class="callout callout-info">
+        <h4>Reminder!</h4>
+        Instructions for how to use modals are available on the
+        <a href="http://getbootstrap.com/javascript/#modals">Bootstrap documentation</a>
+      </div>
+
       <div class="row">
         <div class="col-xs-12">
-          <div class="box box-primary">
-            <div class="box-header">
-              <h3 class="box-title">Bootstrap Slider</h3>
+          <div class="box box-default">
+            <div class="box-header with-border">
+              <h3 class="box-title">Modal Examples</h3>
             </div>
-            <!-- /.box-header -->
             <div class="box-body">
-              <div class="row margin">
-                <div class="col-sm-6">
-                  <input type="text" value="" class="slider form-control" data-slider-min="-200" data-slider-max="200"
-                         data-slider-step="5" data-slider-value="[-100,100]" data-slider-orientation="horizontal"
-                         data-slider-selection="before" data-slider-tooltip="show" data-slider-id="red">
+              <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-default">
+                Launch Default Modal
+              </button>
+              <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal-info">
+                Launch Info Modal
+              </button>
+              <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal-danger">
+                Launch Danger Modal
+              </button>
+              <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modal-warning">
+                Launch Warning Modal
+              </button>
+              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-success">
+                Launch Success Modal
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
 
-                  <p>data-slider-id="red"</p>
-                  <input type="text" value="" class="slider form-control" data-slider-min="-200" data-slider-max="200"
-                         data-slider-step="5" data-slider-value="[-100,100]" data-slider-orientation="horizontal"
-                         data-slider-selection="before" data-slider-tooltip="show" data-slider-id="blue">
-
-                  <p>data-slider-id="blue"</p>
-                  <input type="text" value="" class="slider form-control" data-slider-min="-200" data-slider-max="200"
-                         data-slider-step="5" data-slider-value="[-100,100]" data-slider-orientation="horizontal"
-                         data-slider-selection="before" data-slider-tooltip="show" data-slider-id="green">
-
-                  <p>data-slider-id="green"</p>
-                  <input type="text" value="" class="slider form-control" data-slider-min="-200" data-slider-max="200"
-                         data-slider-step="5" data-slider-value="[-100,100]" data-slider-orientation="horizontal"
-                         data-slider-selection="before" data-slider-tooltip="show" data-slider-id="yellow">
-
-                  <p>data-slider-id="yellow"</p>
-                  <input type="text" value="" class="slider form-control" data-slider-min="-200" data-slider-max="200"
-                         data-slider-step="5" data-slider-value="[-100,100]" data-slider-orientation="horizontal"
-                         data-slider-selection="before" data-slider-tooltip="show" data-slider-id="aqua">
-
-                  <p>data-slider-id="aqua"</p>
-                  <input type="text" value="" class="slider form-control" data-slider-min="-200" data-slider-max="200"
-                         data-slider-step="5" data-slider-value="[-100,100]" data-slider-orientation="horizontal"
-                         data-slider-selection="before" data-slider-tooltip="show" data-slider-id="purple">
-
-                  <p style="margin-top: 10px">data-slider-id="purple"</p>
-                </div>
-                <div class="col-sm-6 text-center">
-                  <input type="text" value="" class="slider form-control" data-slider-min="-200" data-slider-max="200"
-                         data-slider-step="5" data-slider-value="[-100,100]" data-slider-orientation="vertical"
-                         data-slider-selection="before" data-slider-tooltip="show" data-slider-id="red">
-                  <input type="text" value="" class="slider form-control" data-slider-min="-200" data-slider-max="200"
-                         data-slider-step="5" data-slider-value="[-100,100]" data-slider-orientation="vertical"
-                         data-slider-selection="before" data-slider-tooltip="show" data-slider-id="blue">
-                  <input type="text" value="" class="slider form-control" data-slider-min="-200" data-slider-max="200"
-                         data-slider-step="5" data-slider-value="[-100,100]" data-slider-orientation="vertical"
-                         data-slider-selection="before" data-slider-tooltip="show" data-slider-id="green">
-                  <input type="text" value="" class="slider form-control" data-slider-min="-200" data-slider-max="200"
-                         data-slider-step="5" data-slider-value="[-100,100]" data-slider-orientation="vertical"
-                         data-slider-selection="before" data-slider-tooltip="show" data-slider-id="yellow">
-                  <input type="text" value="" class="slider form-control" data-slider-min="-200" data-slider-max="200"
-                         data-slider-step="5" data-slider-value="[-100,100]" data-slider-orientation="vertical"
-                         data-slider-selection="before" data-slider-tooltip="show" data-slider-id="aqua">
-                  <input type="text" value="" class="slider form-control" data-slider-min="-200" data-slider-max="200"
-                         data-slider-step="5" data-slider-value="[-100,100]" data-slider-orientation="vertical"
-                         data-slider-selection="before" data-slider-tooltip="show" data-slider-id="purple">
-                </div>
+        <div class="modal fade" id="modal-default">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Default Modal</h4>
+              </div>
+              <div class="modal-body">
+                <p>One fine body&hellip;</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
               </div>
             </div>
-            <!-- /.box-body -->
+            <!-- /.modal-content -->
           </div>
-          <!-- /.box -->
+          <!-- /.modal-dialog -->
         </div>
-        <!-- /.col -->
-      </div>
-      <!-- /.row -->
+        <!-- /.modal -->
+
+        <div class="modal modal-primary fade" id="modal-primary">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Primary Modal</h4>
+              </div>
+              <div class="modal-body">
+                <p>One fine body&hellip;</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-outline">Save changes</button>
+              </div>
+            </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+
+        <div class="modal modal-info fade" id="modal-info">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Info Modal</h4>
+              </div>
+              <div class="modal-body">
+                <p>One fine body&hellip;</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-outline">Save changes</button>
+              </div>
+            </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+
+        <div class="modal modal-warning fade" id="modal-warning">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Warning Modal</h4>
+              </div>
+              <div class="modal-body">
+                <p>One fine body&hellip;</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-outline">Save changes</button>
+              </div>
+            </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+
+        <div class="modal modal-success fade" id="modal-success">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Success Modal</h4>
+              </div>
+              <div class="modal-body">
+                <p>One fine body&hellip;</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-outline">Save changes</button>
+              </div>
+            </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+
+        <div class="modal modal-danger fade" id="modal-danger">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Danger Modal</h4>
+              </div>
+              <div class="modal-body">
+                <p>One fine body&hellip;</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-outline">Save changes</button>
+              </div>
+            </div>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
     </section>
     <!-- /.content -->
   </div>
@@ -800,22 +898,14 @@
 <!-- ./wrapper -->
 
 <!-- jQuery 3 -->
-<script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="<?php echo base_url(); ?>bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
-<script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="<?php echo base_url(); ?>bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- FastClick -->
-<script src="../../bower_components/fastclick/lib/fastclick.js"></script>
+<script src="<?php echo base_url(); ?>bower_components/fastclick/lib/fastclick.js"></script>
 <!-- AdminLTE App -->
-<script src="../../dist/js/adminlte.min.js"></script>
+<script src="<?php echo base_url(); ?>dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="../../dist/js/demo.js"></script>
-<!-- Bootstrap slider -->
-<script src="../../plugins/bootstrap-slider/bootstrap-slider.js"></script>
-<script>
-  $(function () {
-    /* BOOTSTRAP SLIDER */
-    $('.slider').slider()
-  })
-</script>
+<script src="<?php echo base_url(); ?>dist/js/demo.js"></script>
 </body>
 </html>
