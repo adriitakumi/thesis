@@ -48,4 +48,150 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('pages/layout/collapsed-sidebar');
 	}
+
+	public function widgets()
+	{
+		$this->load->view('pages/widgets');
+	}
+
+	public function chartjs()
+	{
+		$this->load->view('pages/charts/chartjs');
+	}
+
+	public function morris()
+	{
+		$this->load->view('pages/charts/morris');
+	}
+
+	public function flot()
+	{
+		$this->load->view('pages/charts/flot');
+	}
+
+	public function inline()
+	{
+		$this->load->view('pages/charts/inline');
+	}
+
+	public function por()
+	{
+		$this->load->view('pages/examples/404');
+	}
+
+	public function payb()
+	{
+		$this->load->view('pages/examples/500');
+	}
+
+	public function blank()
+	{
+		$this->load->view('pages/examples/blank');
+	}
+
+	public function invoiceprint()
+	{
+		$this->load->view('pages/examples/invoice-print');
+	}
+
+	public function invoice()
+	{
+		$this->load->view('pages/examples/invoice');
+	}
+
+	public function lockscreen()
+	{
+		$this->load->view('pages/examples/lockscreen');
+	}
+
+	public function login()
+	{
+		$this->load->view('pages/examples/login');
+	}
+
+	public function pace()
+	{
+		$this->load->view('pages/examples/pace');
+	}
+
+	public function profile()
+	{
+		$this->load->view('pages/examples/profile');
+	}
+
+	public function register()
+	{
+		$this->load->view('pages/examples/register');
+	}
+
+	public function advanced()
+	{
+		$this->load->view('pages/forms/advanced');
+	}
+
+	public function editors()
+	{
+		$this->load->view('pages/forms/editors');
+	}
+
+	public function general()
+	{
+		$this->load->view('pages/forms/general');
+	}
+
+	public function compose()
+	{
+		$this->load->view('pages/mailbox/compose');
+	}
+
+	public function mailbox()
+	{
+		$this->load->view('pages/mailbox/mailbox');
+	}
+
+	public function readmail()
+	{
+		$this->load->view('pages/mailbox/read-mail');
+	}
+
+	public function data()
+	{
+		$this->load->view('pages/tables/data');
+	}
+
+	public function simple()
+	{
+		$this->load->view('pages/tables/simple');
+	}
+
+	public function buttons()
+	{
+		$this->load->view('pages/tables/buttons');
+	}
+
+	public function uigeneral()
+	{
+		$this->load->view('pages/tables/uigeneral');
+	}
+
+	public function icons()
+	{
+		$this->load->view('pages/tables/icons');
+	}
+
+	public function modals()
+	{
+		$this->load->view('pages/tables/modals');
+	}
+
+	public function sliders()
+	{
+		$this->load->view('pages/tables/sliders');
+	}
+
+	public function timeline()
+	{
+		$this->load->view('pages/tables/timeline');
+	}
+
 }

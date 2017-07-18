@@ -344,7 +344,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="<?php echo site_url('Welcome/index') ?>"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
+            <li class="active"><a href="<?php echo current_url() ?>"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
             <li><a href="<?php echo site_url('welcome/index2') ?>"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
           </ul>
         </li>
@@ -364,7 +364,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           </ul>
         </li>
         <li>
-          <a href="<?php echo base_url(); ?>pages/widgets.html">
+          <a href="<?php echo site_url('welcome/widgets'); ?>">
             <i class="fa fa-th"></i> <span>Widgets</span>
             <span class="pull-right-container">
               <small class="label pull-right bg-green">new</small>
@@ -380,10 +380,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="<?php echo base_url(); ?>pages/charts/chartjs.html"><i class="fa fa-circle-o"></i> ChartJS</a></li>
-            <li><a href="<?php echo base_url(); ?>pages/charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>
-            <li><a href="<?php echo base_url(); ?>pages/charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>
-            <li><a href="<?php echo base_url(); ?>pages/charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>
+            <li><a href="<?php echo site_url('welcome/chartjs'); ?>"><i class="fa fa-circle-o"></i> ChartJS</a></li>
+            <li><a href="<?php echo site_url('welcome/morris'); ?>"><i class="fa fa-circle-o"></i> Morris</a></li>
+            <li><a href="<?php echo site_url('welcome/flot'); ?>"><i class="fa fa-circle-o"></i> Flot</a></li>
+            <li><a href="<?php echo site_url('welcome/inline'); ?>"><i class="fa fa-circle-o"></i> Inline charts</a></li>
           </ul>
         </li>
         <li class="treeview">
