@@ -384,34 +384,32 @@
   </aside>
 
   <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
+  <div class="content-wrapper" style="padding-bottom: 50px;">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
         Strand Selection
-        <small>(IDK what to put here)</small>
+        <small>Grade Inputing</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="<?php echo site_url('enrollment/dashboard'); ?>"><i class="fa fa-dashboard"></i> Enrollment</a></li>
-        <li><a href="<?php echo site_url('enrollment/enrollstudent'); ?>">Enroll Student</li>
+        <li><a href="#"><i class="fa fa-dashboard"></i> Enrollment</a></li>
+        <li><a href="#">Enroll Students</a></li>
         <li class="active">Strand Selection</li>
       </ol>
     </section>
 
     <!-- Main content -->
     <section class="content">
-        <div class="box box-primary">
-            <div class="box-header with-border">
-              <h3 class="box-title">Please enter the ff. grades:</h3>
-            </div>
-            <!-- /.box-header -->
-            <!-- form start -->
-            <form name= "studentprofile" id="studentprofile" role="form">
-              <div class="box-body">
-              <div class="row">
-              <div class="col-md-3">
-                <div class="form-group">
-                  <label>English</label>
+    <div class="row">
+    <div class="col-md-4">
+      <!-- Default box -->
+      <div class="box">
+        <div class="box-header with-border">
+          <h3 class="box-title">Please enter the ff. grades: </h3>
+        </div>
+        <div class="box-body">
+          <div class="form-group">
+                <label>English</label>
                   <input type="text" class="form-control">
                 </div>
                 <div class="form-group">
@@ -441,214 +439,296 @@
                 <div class="form-group">
                   <label for="exampleInputEmail1">MAPEH</label>
                   <input type="text" class="form-control" id="lrn">
-                </div>
-              </div>
-
-              <div class="col-md-4">
-                <div class="small-box bg-aqua">
-                  <div class="inner">
-                    <h3>1200</h3>
-
-                    <p>Students</p>
-                  </div>
-                  <div class="icon">
-                    <i class="fa fa-pencil"></i>
-                  </div>
-                    <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-                </div>
-
-                <div class="small-box bg-aqua">
-                  <div class="inner">
-                    <h3>1200</h3>
-
-                    <p>Students</p>
-                  </div>
-                  <div class="icon">
-                    <i class="fa fa-pencil"></i>
-                  </div>
-                    <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-                </div>
-
-                <div class="small-box bg-aqua">
-                  <div class="inner">
-                    <h3>1200</h3>
-
-                    <p>Students</p>
-                  </div>
-                  <div class="icon">
-                    <i class="fa fa-pencil"></i>
-                  </div>
-                    <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-                </div>
-              </div>
-
-              </div>
-              </div>
-                
-              <!-- /.box-body -->
-
-              <div class="box-footer">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-default" onclick="preview()">Submit</button>
-              </div>
-            </form>
-          </div>
-
-        <div class="col-md-2">
-          <div class="modal modal-default fade" id="modal-default" onload="preview()">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header bg-red">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Is this correct?</h4>
-              </div>
-              <div class="modal-body">
-              <div class="box-body">
-                <div class="form-group">
-                  <label>LRN</label>
-                  <div id="lrn">34567890</div>
-                </div>
-                <div class="form-group">
-                    <div class="row">
-                      <div class="col-md-4">
-                        <label>First Name</label>
-                        <div id="firstname">Adrielle</div>
-                      </div>
-                      <div class="col-md-4">
-                        <label>Middle Name</label>
-                        <div id="middlename">Mestiola</div>
-                      </div>
-                      <div class="col-md-4">
-                        <label>Last Name</label>
-                        <div id="lastname"">Escaro</div>
-                      </div>
-                    </div>
-                </div>
-                <div class="row">
-                <div class="col-md-6">
-                <div class="form-group">
-                  <label>Sex</label>
-                  <div id="sex">Female</div>
-                </div>
-                </div>
-                <div class="col-md-6">
-                <div class="form-group">
-                  <label>Contact Number</label>
-                  <div id="contact">09355156653</div>
-                </div>
-                </div>
-                </div>
-
-                <div class="row">
-                <div class="col-md-4">
-                <div class="form-group">
-                  <label>Birth Date</label>
-                  <div id="datepicker">06/24/1998</div>
-                </div>
-                </div>
-                <div class="col-md-4">
-                <div class="form-group">
-                  <label>Birth Place</label>
-                  <div id="birthplace">Quezon City</div>
-                </div>
-                </div>
-                <div class="col-md-4">
-                <div class="form-group">
-                  <label>Age <small>(as of last birthday)</small></label>
-                  <div id="age">19</div>
-                </div>
-                </div>
-                </div>
-                <div class="row">
-                <div class="col-md-6">
-                <div class="form-group">
-                  <label>Mother Tongue</label>
-                  <div id="mothertongue">Japanese</div>
-                </div>
-                </div>
-                <div class="col-md-6">
-                <div class="form-group">
-                  <label>Religion</label>
-                  <div id="religion">Agnostic</div>
-                </div>
-                </div>
-                </div>
-                <div class="form-group">
-                  <label>Address</label>
-                    <div id="address">#211 Ph9 Barietto st., Bahayang Pag-asa Subd., Imus, Cavite</div>
-                </div>
-                <div class="row">
-                <div class="col-md-6">
-                <div class="form-group">
-                  <label>Father's Name</label>
-                  <div id="father">Wilson A. Escaro</div>
-                </div>
-                </div>
-                <div class="col-md-6">
-                <div class="form-group">
-                  <label>Mother's Maiden Name</label>
-                  <div id="mother">Gema B. Mestiola</div>
-                </div>
-                </div>
-                </div>
-                <div class="row">
-                <div class="col-md-6">
-                <div class="form-group">
-                  <label>Father's Contact No.</label>
-                  <div id="fathercontact">09179430720</div>
-                </div>
-                </div>
-                <div class="col-md-6">
-                <div class="form-group">
-                  <label>Mother's Contact No.</label>
-                  <div id="mothercontact">09204260692</div>
-                </div>
-                </div>
-                </div>
-                <div class="row">
-                <div class="col-md-4">
-                <div class="form-group">
-                  <label>Guardian's Name</label>
-                  <div id="guardian">Guardian Angel</div>
-                </div>
-                </div>
-                <div class="col-md-4">
-                <div class="form-group">
-                  <label>Relationship</label>
-                  <div id="relationship">Guardian</div>
-                </div>
-                </div>
-                <div class="col-md-4">
-                <div class="form-group">
-                  <label>Guardian's Contact No.</label>
-                  <div id="guardiancontact">424-5744</div>
-                </div>
-                </div>
-                </div>
-              </div>
-              <div class="modal-footer bg-red">
-                <button type="button" class="btn btn-outline pull-left" data-dismiss="modal">Go back</button>
-                <button type="button" class="btn btn-outline">Submit</button>
-              </div>
-            </div>
-            <!-- /.modal-content -->
-          </div>
-          <!-- /.modal-dialog -->
+                </div>        </div>
+        <!-- /.box-body -->
+        <div class="box-footer">
+          <button type="submit" name="search" class="btn btn-primary btn-flat">Submit</button>
+        </div>
+        <!-- /.box-footer-->
       </div>
-        <!-- /.modal -->
+      <!-- /.box -->
+      </div>
+      <!-- /.col-md-3 -->
+
+      <div class="col-md-8">
+        <div style="margin-bottom: 20px;">
+        <h3>Available Strands:</h3>
         </div>
 
-        <!--/.col (left) -->
+      <div class="row">
+
+        <div class="col-md-6">
+          <div class="small-box bg-green" data-toggle="modal" data-target="#stem">
+            <div class="inner">
+              <h3>STEM</h3>
+
+              <p>Science, Technology,<br> Engineering, and Mathematics</p>
+            </div>
+            <div class="icon">
+              <i class="fa fa-flask"></i>
+            </div>
+            <a href="#" class="small-box-footer">Enroll <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <!-- ./col -->
+
+        <div class="col-md-6">
+          <div class="small-box bg-maroon" data-toggle="modal" data-target="#gas">
+            <div class="inner">
+              <h3>GAS</h3>
+
+              <p>General<br>Academic Strand</p>
+            </div>
+            <div class="icon">
+              <i class="fa fa-book"></i>
+            </div>
+            <a href="#" class="small-box-footer">Enroll <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <!-- ./col -->
+
       </div>
       <!-- /.row -->
 
-      
+      <div class="row">
+
+        <div class="col-md-6">
+          <div class="small-box bg-yellow" data-toggle="modal" data-target="#humss">
+            <div class="inner">
+              <h3>HUMSS</h3>
+
+              <p>Humanities<br>and Social Sciences</p>
+            </div>
+            <div class="icon">
+              <i class="fa fa-users"></i>
+            </div>
+            <a href="#" class="small-box-footer">Enroll <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <!-- ./col -->
+
+        <div class="col-md-6">
+          <div class="small-box bg-purple" data-toggle="modal" data-target="#abm">
+            <div class="inner">
+              <h3>ABM</h3>
+
+              <p>Accountancy<br>and Business Management</p>
+            </div>
+            <div class="icon">
+              <i class="fa fa-briefcase"></i>
+            </div>
+            <a href="#" class="small-box-footer">Enroll <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <!-- ./col -->
+
+      </div>
+      <!-- /.row -->
+
+      <div class="row">
+
+        <div class="col-md-6">
+          <div class="small-box bg-blue" data-toggle="modal" data-target="#tvlhe">
+            <div class="inner">
+              <h3>TVL-HE</h3>
+
+              <p>Technology-Vocational<br>Livelihood: Home Economics</p>
+            </div>
+            <div class="icon">
+              <i class="fa fa-home"></i>
+            </div>
+            <a href="#" class="small-box-footer">Enroll <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <!-- ./col -->
+
+        <div class="col-md-6">
+          <div class="small-box bg-navy" data-toggle="modal" data-target="#tvla">
+            <div class="inner">
+              <h3>TVL-AS</h3>
+
+              <p>Technogy-Vocational<br>Livelihood: Automotive Services</p>
+            </div>
+            <div class="icon">
+              <i class="fa fa-cogs"></i>
+            </div>
+            <a href="#" class="small-box-footer">Enroll <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <!-- ./col -->
+
+      </div>
+      <!-- /.row -->
+      </div>
+      <!-- /.col-md-8 -->
+      </div>
+      <!-- /.row -->
+
+      <div class="modal fade" id="stem">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-green">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Are you sure?</h4>
+            </div>
+            <div class="modal-body">
+              <div class="box-body">
+                <p>This action cannot be changed once the profile is sent to the database of the selected strand (STEM).</p>
+                <br>
+                <center>
+                  <button type="button" class="btn bg-green" data-toggle="modal" data-target="#stem" style="width: 60%; height: 50px;">Enroll to STEM</button>
+                </center>
+              </div>
+              <!-- /.box-body -->
+            </div>
+            <!-- /.modal-body -->
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+      <!-- /.modal -->
+
+      <div class="modal fade" id="gas">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-maroon">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Are you sure?</h4>
+            </div>
+            <div class="modal-body">
+              <div class="box-body">
+                <p>This action cannot be changed once the profile is sent to the database of the selected strand (GAS).</p>
+                <br>
+                <center>
+                  <button type="button" class="btn bg-maroon" data-toggle="modal" data-target="#stem" style="width: 60%; height: 50px;">Enroll to GAS</button>
+                </center>
+              </div>
+              <!-- /.box-body -->
+            </div>
+            <!-- /.modal-body -->
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+      <!-- /.modal -->
+
+      <div class="modal fade" id="humss">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-yellow">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Are you sure?</h4>
+            </div>
+            <div class="modal-body">
+              <div class="box-body">
+                <p>This action cannot be changed once the profile is sent to the database of the selected strand (HUMSS).</p>
+                <br>
+                <center>
+                  <button type="button" class="btn bg-yellow" data-toggle="modal" data-target="#stem" style="width: 60%; height: 50px;">Enroll to HUMSS</button>
+                </center>
+              </div>
+              <!-- /.box-body -->
+            </div>
+            <!-- /.modal-body -->
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+      <!-- /.modal -->
+
+      <div class="modal fade" id="abm">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-purple">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Are you sure?</h4>
+            </div>
+            <div class="modal-body">
+              <div class="box-body">
+                <p>This action cannot be changed once the profile is sent to the database of the selected strand (ABM).</p>
+                <br>
+                <center>
+                  <button type="button" class="btn bg-purple" data-toggle="modal" data-target="#stem" style="width: 60%; height: 50px;">Enroll to ABM</button>
+                </center>
+              </div>
+              <!-- /.box-body -->
+            </div>
+            <!-- /.modal-body -->
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+      <!-- /.modal -->
+
+      <div class="modal fade" id="tvlhe">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-blue">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Are you sure?</h4>
+            </div>
+            <div class="modal-body">
+              <div class="box-body">
+                <p>This action cannot be changed once the profile is sent to the database of the selected strand (TVL-HE).</p>
+                <br>
+                <center>
+                  <button type="button" class="btn bg-blue" data-toggle="modal" data-target="#stem" style="width: 60%; height: 50px;">Enroll to TVL-HE</button>
+                </center>
+              </div>
+              <!-- /.box-body -->
+            </div>
+            <!-- /.modal-body -->
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+      <!-- /.modal -->
+
+      <div class="modal fade" id="tvla">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header bg-navy">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Are you sure?</h4>
+            </div>
+            <div class="modal-body">
+              <div class="box-body">
+                <p>This action cannot be changed once the profile is sent to the database of the selected strand (TVL-Automative).</p>
+                <br>
+                <center>
+                  <button type="button" class="btn bg-navy" data-toggle="modal" data-target="#stem" style="width: 60%; height: 50px;">Enroll to TVL-Automative</button>
+                </center>
+              </div>
+              <!-- /.box-body -->
+            </div>
+            <!-- /.modal-body -->
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+      <!-- /.modal -->
 
 
     </section>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
+
+
+
+
   <footer class="main-footer">
     <div class="pull-right hidden-xs">
       <b>Version</b> 2.4.0

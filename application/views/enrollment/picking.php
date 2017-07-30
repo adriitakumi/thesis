@@ -384,330 +384,91 @@
   </aside>
 
   <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
+  <div class="content-wrapper" style="padding-bottom: 385px;">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
         Enroll Student
-        <small>(IDK what to put here)</small>
+        <small>Choose one</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Enrollment</a></li>
-        <li class="active">Enroll Student</li>
+        <li class="active"><a href="#">Enroll Student</a></li>
       </ol>
     </section>
 
     <!-- Main content -->
     <section class="content">
-          <!-- general form elements -->
-          <div class="box box-info">
-            <div class="box-header with-border">
-              <h3 class="box-title">Senior High School Profile</h3>
-            </div>
-            <!-- /.box-header -->
-            <!-- form start -->
-            <form name= "studentprofile" id="studentprofile" role="form">
-              <div class="box-body">
-                <div class="form-group">
-                  <label for="exampleInputEmail1">LRN</label>
-                  <input type="text" class="form-control" id="lrn" placeholder="Learner Reference Number">
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Name</label>
-                    <div class="row">
-                      <div class="col-md-4">
-                        <input type="text" class="form-control" id="firstname" placeholder="First Name" sty>
-                      </div>
-                      <div class="col-md-4">
-                        <input type="text" class="form-control" id="middlename" placeholder="Middle Name">
-                      </div>
-                      <div class="col-md-4">
-                        <input type="text" class="form-control" id="lastname" placeholder="Last Name">
-                      </div>
-                    </div>
-                </div>
-                <div class="row">
-                <div class="col-md-6">
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Sex</label>
-                  <select class="form-control" id="sex">
-                    <option>Female</option>
-                    <option>Male</option>
-                  </select>
-                </div>
-                </div>
-                <div class="col-md-6">
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Contact Number</label>
-                  <input type="text" class="form-control" id="contact" placeholder="Contact Number">
-                </div>
-                </div>
-                </div>
-                <hr>
-                <div class="row">
-                <div class="col-md-4">
-                <div class="form-group">
-                  <label>Birth Date</label>
-                  <div class="input-group date">
-                    <div class="input-group-addon">
-                      <i class="fa fa-calendar"></i>
-                    </div>
-                    <input type="text" class="form-control" id="datepicker" placeholder="mm/dd/yyyy">
-                  </div>
-                </div>
-                </div>
-                <div class="col-md-4">
-                <div class="form-group">
-                  <label>Birth Place</label>
-                  <input type="text" class="form-control" id="birthplace" placeholder="Birth Place">
-                </div>
-                </div>
-                <div class="col-md-4">
-                <div class="form-group">
-                  <label>Age <small>(as of last birthday)</small></label>
-                  <input type="text" class="form-control" id="age" placeholder="Age">
-                </div>
-                </div>
-                </div>
-                <div class="row">
-                <div class="col-md-6">
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Mother Tongue</label>
-                  <input type="text" class="form-control" id="mothertongue" placeholder="Mother Tongue">
-                </div>
-                </div>
-                <div class="col-md-6">
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Religion</label>
-                  <input type="text" class="form-control" id="religion" placeholder="Religion">
-                </div>
-                </div>
-                </div>
-                <hr>
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Address</label>
-                  <div class="row">
-                      <div class="col-md-3">
-                        <input type="text" class="form-control" id="address" placeholder="House #, Street" sty>
-                      </div>
-                      <div class="col-md-3">
-                        <input type="text" class="form-control" id="barangay" placeholder="Barangay">
-                      </div>
-                      <div class="col-md-3">
-                        <input type="text" class="form-control" id="city" placeholder="City">
-                      </div>
-                      <div class="col-md-3">
-                        <input type="text" class="form-control" id="province" placeholder="Province">
-                      </div>
-                    </div>
-                </div>
-                <hr>
-                <div class="row">
-                <div class="col-md-6">
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Father's Name</label>
-                  <input type="text" class="form-control" id="father" placeholder="Father's Name">
-                </div>
-                </div>
-                <div class="col-md-6">
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Mother's Maiden Name</label>
-                  <input type="text" class="form-control" id="mother" placeholder="Mother's Maiden Name">
-                </div>
-                </div>
-                </div>
-                <div class="row">
-                <div class="col-md-6">
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Father's Contact No.</label>
-                  <input type="text" class="form-control" id="fathercontact" placeholder="Father's Contact No.">
-                </div>
-                </div>
-                <div class="col-md-6">
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Mother's Contact No.</label>
-                  <input type="text" class="form-control" id="mothercontact" placeholder="Mother's Contact No.">
-                </div>
-                </div>
-                </div>
-                <div class="row">
-                <div class="col-md-4">
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Guardian's Name</label>
-                  <input type="text" class="form-control" id="guardian" placeholder="Guardian's Name">
-                </div>
-                </div>
-                <div class="col-md-4">
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Relationship</label>
-                  <input type="text" class="form-control" id="relationship" placeholder="Relationship with Guardian">
-                </div>
-                </div>
-                <div class="col-md-4">
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Guardian's Contact No.</label>
-                  <input type="text" class="form-control" id="guardiancontact" placeholder="Guradian's Contact No.">
-                </div>
-                </div>
-                </div>
-              </div>
-              <!-- /.box-body -->
 
-              <div class="box-footer">
-                <button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#modal-default" onclick="preview()">Submit</button>
-              </div>
-            </form>
-          </div>
-
-          
-          <div class="modal modal-default fade" id="modal-default" onload="preview()">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header bg-aqua">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Is this correct?</h4>
-              </div>
-              <div class="modal-body">
-              <div class="box-body">
-                <div class="form-group">
-                  <label>LRN</label>
-                  <div id="lrn">34567890</div>
-                </div>
-                <div class="form-group">
-                    <div class="row">
-                      <div class="col-md-4">
-                        <label>First Name</label>
-                        <div id="firstname">Adrielle</div>
-                      </div>
-                      <div class="col-md-4">
-                        <label>Middle Name</label>
-                        <div id="middlename">Mestiola</div>
-                      </div>
-                      <div class="col-md-4">
-                        <label>Last Name</label>
-                        <div id="lastname"">Escaro</div>
-                      </div>
-                    </div>
-                </div>
-                <div class="row">
-                <div class="col-md-4">
-                <div class="form-group">
-                  <label>Sex</label>
-                  <div id="sex">Female</div>
-                </div>
-                </div>
-                <div class="col-md-4">
-                <div class="form-group">
-                  <label>Contact Number</label>
-                  <div id="contact">09355156653</div>
-                </div>
-                </div>
-                </div>
-                <hr>
-                <div class="row">
-                <div class="col-md-4">
-                <div class="form-group">
-                  <label>Birth Date</label>
-                  <div id="datepicker">06/24/1998</div>
-                </div>
-                </div>
-                <div class="col-md-4">
-                <div class="form-group">
-                  <label>Birth Place</label>
-                  <div id="birthplace">Quezon City</div>
-                </div>
-                </div>
-                <div class="col-md-4">
-                <div class="form-group">
-                  <label>Age <small>(as of last birthday)</small></label>
-                  <div id="age">19</div>
-                </div>
-                </div>
-                </div>
-                <div class="row">
-                <div class="col-md-4">
-                <div class="form-group">
-                  <label>Mother Tongue</label>
-                  <div id="mothertongue">Japanese</div>
-                </div>
-                </div>
-                <div class="col-md-4">
-                <div class="form-group">
-                  <label>Religion</label>
-                  <div id="religion">Agnostic</div>
-                </div>
-                </div>
-                </div>
-                <hr>
-                <div class="form-group">
-                  <label>Address</label>
-                    <div id="address">#211 Ph9 Barietto st., Bahayang Pag-asa Subd., Imus, Cavite</div>
-                </div>
-                <hr>
-                <div class="row">
-                <div class="col-md-4">
-                <div class="form-group">
-                  <label>Father's Name</label>
-                  <div id="father">Wilson A. Escaro</div>
-                </div>
-                </div>
-                <div class="col-md-4">
-                <div class="form-group">
-                  <label>Mother's Maiden Name</label>
-                  <div id="mother">Gema B. Mestiola</div>
-                </div>
-                </div>
-                </div>
-                <div class="row">
-                <div class="col-md-4">
-                <div class="form-group">
-                  <label>Father's Contact No.</label>
-                  <div id="fathercontact">09179430720</div>
-                </div>
-                </div>
-                <div class="col-md-4">
-                <div class="form-group">
-                  <label>Mother's Contact No.</label>
-                  <div id="mothercontact">09204260692</div>
-                </div>
-                </div>
-                </div>
-                <div class="row">
-                <div class="col-md-4">
-                <div class="form-group">
-                  <label>Guardian's Name</label>
-                  <div id="guardian">Guardian Angel</div>
-                </div>
-                </div>
-                <div class="col-md-4">
-                <div class="form-group">
-                  <label>Relationship</label>
-                  <div id="relationship">Guardian</div>
-                </div>
-                </div>
-                <div class="col-md-4">
-                <div class="form-group">
-                  <label>Guardian's Contact No.</label>
-                  <div id="guardiancontact">424-5744</div>
-                </div>
-                </div>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-primary pull-left" data-dismiss="modal">Go back</button>
-                <a href="<?php echo site_url('enrollment/enrollstudent/strands') ?>">
-                <button type="button" class="btn btn-primary">Confirm</button>
-                </a>
+      <!-- Default box -->
+      <div class="row" style="margin-top: 20px;">
+            <div class="col-md-4">
+              <div class="alert alert-warning alert-dismissible" style="height:366px;">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <h4><i class="icon fa fa-check"></i> Remember!</h4>
+                <ul style="font-size: 16px;">
+                  <li>Don't be distracted by your surroundings</li>
+                  <li>Make sure you input the correct data!</li>
+                  <li>Explain thoroughly the process of enrollment to the applicant</li>
+                  <li>Answer any question being asked</li>
+                  <li>Be approachable!</li>
+                  <li>Smile!</li>
+                </ul>
               </div>
             </div>
-            <!-- /.modal-body -->
+
+            <div class="col-md-8">
+              <div class="row">
+              <div class="col-md-6">
+              <div class="small-box bg-purple">
+                <div class="inner">
+                  <h3>Apply</h3>
+
+                  <p>For Enrollment</p>
+                </div>
+                <div class="icon">
+                  <i class="fa  fa-files-o"></i>
+                </div>
+                <a href="#" class="small-box-footer" style="height: 26px;">More info <i class="fa fa-arrow-circle-right"></i></a>
+              </div>
+
+              
+            </div>
+
+            <div class="col-md-6">
+              <div class="small-box bg-maroon">
+                <div class="inner">
+                  <h3>Search</h3>
+
+                  <p>Online Applications</p>
+                </div>
+                <div class="icon">
+                  <i class="ion ion-pie-graph"></i>
+                </div>
+                <a href="#" class="small-box-footer" style="height: 26px;">More info <i class="fa fa-arrow-circle-right"></i></a>
+              </div>
+            </div>
           </div>
-          <!-- /.modal-content -->
-        </div>
-        <!-- /.modal-dialog --> 
-      </div>
-      <!-- /.modal -->
+
+          <div>
+            <div class="alert bg-maroon alert-dismissible" style="padding-bottom: 45px;">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <h4><i class="icon fa fa-check"></i> Apply for enrollment!</h4>
+                <ol type= "1" style="font-size: 16px;">
+                  <li>Fill up a personal information form</li>
+                  <li>Input grades to determine available strands</li>
+                  <li>Select desired strand</li>
+                  <li>Sumbit requirements</li>
+                  <li>Finish Enrollment</li>
+                  <a href="<?php echo site_url('enrollment/enrollstudent/enroll')?>">
+                  <button type="button" class="btn pull-right" style="background-color: rgba(0,0,0,0.25); color: white;">Proceed</button>
+                </ol>
+            </div>
+          </div>
+          </div>
+          <!-- /.row-->
+    </div>
+
     </section>
     <!-- /.content -->
   </div>
